@@ -1,0 +1,6 @@
+FROM python:3.13.13
+
+WORKDIR /app
+COPY generate.py /app/
+
+ENTRYPOINT ["python", "generate.py"]
